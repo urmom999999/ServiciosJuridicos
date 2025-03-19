@@ -1,50 +1,43 @@
 body {
   margin: 0;
+  width: 90%;
+  background-color: rgb(111, 102, 121);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#test {
   width: 100%;
-  background-color: black;
 }
 .e {
   display: flex;
   flex-direction: column;
-  height: 60rem;
+  height: 100rem;
+  background-color: rgb(255, 255, 255);
 }
 .head {
+
   display: flex;
   flex-direction: row;
   height: 2rem;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(226, 239, 222);
+
 }
-.Inicio {
+
+
+
+.bodytexto {
+  height: 20REM;
   display: block;
 }
-.Sobrenosotros {
-  display: block;
-}
-.Servicios {
-  display: block;
-}
-.Contacto {
-  display: block;
-}
-.body {
-  display: flex;
-}
-#test {
-  width: 100%;
-}
-.bodytext {
-  display: block;
-}
-.FAQ {
-  display: block;
-}
-.Testimonios {
+.Testimonios{
+  height: 20REM;
   display: block;
 }
 .footer {
+  height: 8EM;
+  background-color:rgb(218, 145, 76);
   display: flex;
   background-clip: url(https://videos.pexels.com/video-files/4475744/4475744-uhd_2560_1440_25fps.mp4);
 }
