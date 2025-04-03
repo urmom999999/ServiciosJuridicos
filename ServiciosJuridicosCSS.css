@@ -1,15 +1,9 @@
 .e {
   display: flex;
   flex-direction: column;
-  height: 116rem;
+  
   background-color: rgb(255, 255, 255);
   width: 100%;
-  @media (width <= 100000px) {
-    .e {
-      background-color: aqua;
-      height: 30000rem;
-    }
-  }
 }
 
 #test {
