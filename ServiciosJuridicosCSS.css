@@ -4,6 +4,12 @@
   height: 116rem;
   background-color: rgb(255, 255, 255);
   width: 100%;
+  @media (width <= 100000px) {
+    .e {
+      background-color: aqua;
+      height: 30000rem;
+    }
+  }
 }
 
 #test {
@@ -13,49 +19,56 @@
 }
 
 .head {
-
   display: flex;
   flex-direction: row;
   height: 3rem;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.7rem;
+  max-width: 100%;
 }
-.logomenu{display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          gap:1rem}
-.extraible{
+.logomenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 6rem;
+
+}
+.extraible {
   background-image: url(https://cdn-icons-png.flaticon.com/512/2976/2976215.png);
   background-size: 24px;
-            width: 1.5rem;
-            height: 1.5rem;
-            background-position: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-position: center;
 }
 
-.telefono{
-  display:flex;
+.telefono {
+  display: flex;
   flex-direction: row;
-background-color: #058BA3;
-border-radius: 0.5rem;
-padding: 0.5rem;
-width: 8rem;
-justify-content: center;
-align-items: center;
-gap: 0.5rem;
+  background-color: #058ba3;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
-.telnumero{color: #ffffff;}
-.telimagen{
+.telnumero {
+  color: #ffffff;
+}
+.telimagen {
   background-image: url(https://images.vexels.com/media/users/3/157620/isolated/preview/28323eba1d9f71acc3cc92f0e043fc5c-icono-de-telefono-blanco-y-negro.png);
   background-size: 22px;
-            width: 1rem;
-            height: 1rem;
-            background-position: center;
-          }
+  width: 1rem;
+  height: 1rem;
+  background-position: center;
+}
 
-  body {
+body {
   margin: 0;
   width: 92%;
   background-color: #565656;
@@ -63,108 +76,129 @@ gap: 0.5rem;
   padding-right: 4%;
 }
 
+.bodytexto {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 20rem 20rem;
+  grid-template-areas:
+    "a b"
+    "c b"
+    "e e";
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+.bodytextofrasecontenedor {
+  display: flex;
+  grid-area: a;
+  background-color: #79c0b4;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
 
-    .bodytexto {
+.bodytextofrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+  font-style: italic;
+  text-size-adjust: auto;
+  font-size: 3vw;
+  max-height: 2rem;
+  max-width: 90%;
 
-      display: grid;
-      grid-template-columns: 35% 65%;
-      grid-template-rows: 20rem 20rem;
-      grid-template-areas: "a b"
-                           "c b"
-                           "e e";
-      gap:1rem;
-      justify-content: center;
-      padding:1rem
-      
+  overflow-wrap: break-word;
 
-        }
-    .bodytextofrasecontenedor {
-      width: 100%;
-      display:grid;
-      grid-area: a;
-      background-color:#79C0B4;
-      border-radius: 0.5rem;
-      row-gap: 2rem;
+  
+}
 
-      justify-content: center;
-      align-items: center;
-      font-family: serif;
-      font-size: larger;
-      
-    }
+.bodytextoimagen {
+  display: grid;
+  grid-area: c;
+  border-radius: 0.5rem;
+  background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/03/kim-wexler-jimmy-mcgill-better-call-saul.jpg);
+  background-size: 650px;
+  background-position: center;
+}
 
-            .bodytextofrase {
-              width: 20REM;
+.bodytextoFAQ {
+  display: grid;
+  grid-area: b;
+  background-color: #d9d9d9;
+  border-radius: 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
 
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-family: serif;
-              font-style: italic;
-              font-size: 1.8rem;
-              
-              
-            }
-
-    .bodytextoimagen{
-      
-      display:grid;
-      grid-area: c;
-      border-radius: 0.5rem;
-      background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/03/kim-wexler-jimmy-mcgill-better-call-saul.jpg);
-      background-size: 650px;
-      background-position: center;
-    }
-
-    .bodytextoFAQ{
-      display:grid;
-      grid-area: b;
-      background-color: #D9D9D9;
-      border-radius: 0.5rem;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 1rem;
-    }
-
-.Testimonios{
-  height: 25rem;
+.Testimonios {
+  
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   grid-area: e;
-  width:100%;
-  background-color: #9BE1AA;
+  width: 100%;
+  background-color: #9be1aa;
   border-radius: 0.5rem;
-  
-  
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 3vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: smaller;
+
 }
-      .Testimonio1{display: flex;width: 15rem;flex-direction: column;align-items: center;margin-top: 4rem;}
-          .Testimonioimagen{
-            background-image: url(https://static-00.iconduck.com/assets.00/profile-icon-512x512-w0uaq4yr.png);
-            background-size: 40px;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 20rem;
-            background-position: center;
+.Testimonio1 {
+  display: flex;
 
-          }
-          .Testimonio1texto{display: flex;flex-direction: column;}
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  --font-size: 1.5vw;
+  max-width: 15rem;
+  max-height: 20rem;
+}
+.Testimonioimagen {
+  background-image: url(https://static-00.iconduck.com/assets.00/profile-icon-512x512-w0uaq4yr.png);
+  background-size: 40px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 20rem;
+  background-position: center;
+}
+.Testimonio1texto {
+  display: flex;
+  flex-direction: column;
+}
 
-      .Testimonio2{display: flex;width: 15rem;flex-direction: column;align-items: center;margin-top: 4rem;}
-          .Testimonio2texto{display: flex;flex-direction: column;}
-      .Testimonio3{display: flex;width: 15rem;flex-direction: column;align-items: center;margin-top: 4rem;}
-          .Testimonio3texto{display: flex;flex-direction: column;}
+.Testimonio2 {
+  display: flex;
+  width: 15rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.Testimonio2texto {
+  display: flex;
+  flex-direction: column;
+}
+.Testimonio3 {
+  display: flex;
+  width: 15rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.Testimonio3texto {
+  display: flex;
+  flex-direction: column;
+}
 .footer {
-  height: 15EM;
-  background-color:rgb(218, 145, 76);
+  height: 15em;
+  background-color: rgb(218, 145, 76);
   display: flex;
   align-items: center;
-  
-  
 }
-.footertext{
-  width: 60%;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 3REM;
+.footertext {
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 3rem;
 }
