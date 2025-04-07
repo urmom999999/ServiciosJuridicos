@@ -147,6 +147,7 @@ body {
   font-size: 3vw;
   max-height: 2rem;
   max-width: 90%;
+  padding: 1rem;
 
   overflow-wrap: break-word;
 
@@ -301,7 +302,8 @@ a{color:rgb(146, 181, 214)}
     background-position: center;
   }
   .bodytextofrase{
-    font-size: 1.3rem;
+    font-size: 4vw;
+    
   }
   .bodytextoFAQ{
     font-size: 0.8rem;
