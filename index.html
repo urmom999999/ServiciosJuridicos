@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="overlay"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="ServiciosJuridicosCSS.css">
+    <script src="oscurojs.js"></script>
+
     <title>ServiciosJuridicos</title>
 </head>
 <body>
+    <DIV class="e">
     <div class="overlay">
         <div class="overlayimagen"></div>
         <div class="overlaytexto">________<br>Servicios<br>Juridicos</div>
         
     </div>
-    <DIV class="e">
+
         <div class="head">
             <div class="logomenu">
-                <div class="extraible"></div>
+                <div class="extraible">
+                    <button class="extraibleboton"></button>
+                    <div class="elementosextraible">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                        <a href="#">Opción 4</a>
+                    </div>
+                </div>
+
+
+
+
                 <div class="sj">Servicios<br>Juridicos</div></div>
             <div class="Sobrenosotros">Sobre nosotros</div>
             <div class="Contacto">Contacto</div>
             <div class="Pidecita">Pide Cita</div>
             <div class="telefono">
-                <div class="telnumero">+3498612345</div>
-                <div class="telimagen"></div>
+                <button id="boton">Modo oscuro</button>
             </div>
         </div>
         <div class="body">
@@ -45,26 +59,9 @@
                     <br>El costo varía según el tipo de caso y la complejidad del mismo. Ofrecemos planes de pago flexibles y cotizaciones personalizadas según tus necesidades.
                     </div>
                 <div class="Testimonios">
-
-                    <div class="Testimonio1">
-                        <div class="Testimonioimagen"></div>
-                        <div class="Testimonio1texto">         
-                        <strong>--"No recuerdo mucho, pero mi abogado sí"</strong>      
-                        <br>"Esa noche fue... intensa. Había mucho polvo blanco en el aire, y no era  talco. Lo único que sé es que desperté con una multa por 'daños a  propiedad pública', pero mi abogado hizo que todo desapareciera como si  fuera un mal sueño. ¿Defecar en un coche de policía? ¡Eso suena a algo  que haría otra persona! Gracias por salvarme de mí mismo."
-                        <br>Carlos R., amante de las fiestas extremas.</div></div>
-                    <div class="Testimonio2">
-                        <div class="Testimonioimagen"></div>
-                        <div class="Testimonio2texto">       
-                        <strong>--"Bitcoin es complicado, pero mi abogado lo hizo simple"</strong>     
-                        <br>"¿Millones en Bitcoin desaparecidos? ¡Qué coincidencia! La verdad es que todo eso  de las criptomonedas es muy confuso, y yo solo soy un simple entusiasta. Pero mi abogado, ese sí que sabe de magia financiera. Ahora, en lugar  de estar en la cárcel, estoy disfrutando de un 'retiro temprano'.  ¡Gracias, equipo jurídico!"
-                        <br>María G., inversora accidental.</div></div>
-                    <div class="Testimonio3">
-                        <div class="Testimonioimagen"></div>
-                        <div class="Testimonio3texto">        
-                        <strong>--"No sé qué pasó con la casa de mi tía, pero mi abogado sí"</strong>      
-                        <br>"Bueno, sí, hubo un pequeño... incidente con la casa de mi tía. Digamos que  hubo fuego involucrado, pero no voy a entrar en detalles. Lo importante  es que mi abogado hizo que todo pareciera un 'accidente desafortunado'.  ¿Pruebas? ¿Qué pruebas? ¡Gracias a ellos, mi tía y yo seguimos en buenos términos... más o menos!"
-                        <br>Juan P., amante de las barbacoas.
-                        </div></div>
+                    <button id="testbutton">Actualizar Testimonios</button>
+                    
+                    <div id="testimonios-container"></div>
                 </div>
             </div>
             
@@ -73,7 +70,7 @@
             © 2024 ATT. Todos los derechos reservados.
             <br>Diseñado para conectarte con lo que más importa. Explora nuestras soluciones innovadoras y descubre cómo podemos ayudarte a alcanzar tus metas.
             <br>Síguenos en <a HREF="">juridicoservicio69@gmail.es</a> para mantenerte al día con las últimas novedades.
-            <br>| <a HREF="">Política de Privacidad</a> | <a HREF="">Términos y Condiciones</a> | <a HREF="">Aviso Legal</a> | <a HREF="">Contacto</a>
+            <br>| <a href="">Política de Privacidad</a> | <a HREF="">Términos y Condiciones</a> | <a HREF="">Aviso Legal</a> | <a HREF="">Contacto</a>
         </div>
     </div>
 
